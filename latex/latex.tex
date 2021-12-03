@@ -1,0 +1,56 @@
+
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+% use UTF8 encoding 
+\usepackage[utf8]{inputenc}
+% use KoTeX package for Korean
+
+\usepackage{kotex} 
+\usepackage{hyperref} 
+\usepackage[singlespacing]{setspace}
+%singlespacing, onehalfspacing, doublespacing  option
+\usepackage{graphicx}
+%for image
+\usepackage{listings}
+%for code block
+\usepackage{color}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm,a4paper]{geometry}
+%set document margin
+\usepackage{indentfirst}
+%for paragraph indent
+
+\title{TITLE}
+\author{AUTHOR}
+
+\date{DATE}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h] % Set image
+    \centering
+    \includegraphics[width=10cm]{IMAGEPATH.png}
+    \caption{CAPTION}
+    \label{fig:LABEL}
+\end{figure}
+
+\section{HEADLINE}
+CONTENTS \texttt{CODE} $MATH$ fig\ref{fig:LABEL}
+
+\lstset{
+    captionpos=b,
+    keywordstyle=\color{blue},
+    language=C++,
+    numbers=left,
+    numbersep=10pt,
+    stepnumber=1,
+    tabsize=2,
+    title=\lstname
+}
+\begin{lstlisting}[frame=single,caption={CAPTION}]
+CPP CODE
+\end{lstlisting}
+
+\end{document}
