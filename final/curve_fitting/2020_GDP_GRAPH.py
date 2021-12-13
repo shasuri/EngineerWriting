@@ -1,3 +1,6 @@
+# Written by gusah009
+# https://github.com/gusah009
+
 import matplotlib.pyplot as plt
 import numpy as np
 

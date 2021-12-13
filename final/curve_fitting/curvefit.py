@@ -1,3 +1,6 @@
+# Written by lcy8047
+# https://github.com/lcy8047
+
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.optimize as opt
