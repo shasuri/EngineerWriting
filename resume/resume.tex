@@ -1,0 +1,177 @@
+% Engineering Writing and Presentation Resume Assignment
+% Sburg Bulburg, Dec.07.21
+% Template from https://ko.overleaf.com/articles/ashish-sinhas-curriculum-vitae/rhcjpcxjjbyj
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+\usepackage{graphicx}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Sburg} % Your first name
+\familyname{Bulburg} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{12-3, Surim-ro 45beon-gil, Geumjeong-gu}{Busan, Republic of Korea 123456}
+\mobile{(+82) 10 1234 5678 }
+\email{sburg123@zoh.com}
+\email{sburg123@pusan.ac.kr}
+\extrainfo{\href{https://github.com/shasuri}{Github: shasuri}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2017--2022}{Pusan National University}{\newline Department of Computer Engineering}{Bachelor of Technology}{}{GPA -- 3.7/4.5}
+% Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2021}{Frontend Dev. Intern}{\textsc{Idino}}{}{}{
+\begin{itemize}
+\item Developed system integration with Websquare5 platform.
+\item Implemented frontend part of PNU Education information system.
+\item Support database part to refactor sql with MSSQL.
+\end{itemize}}
+
+
+\cventry{2018--2020}{CERT}{\textsc{OOO Command}}{}{}{
+\begin{itemize}
+\item Worked on Computer Emergency Response Team.
+\item Monitored and responsed network connection and security status on under brigades with NAC and UTM.
+\end{itemize}}
+
+%------------------------------------------------
+
+\section{Projects}
+
+\cventry{2021}{Metaverse platform for education\href{https://github.com/}{[Code]}}{\textit{Hackathon}}{}{}{
+\begin{itemize}
+\item Developed online communication metaverse platform for education.
+\item Implemented backend part of web api server and database table.
+\item Skills : Spring boot, MySQL
+\end{itemize}}
+
+\cventry{2020}{Moss signal translator}{\textit{Term-project}}{}{}{
+\begin{itemize}
+\item Developed moss signal translator using FPGA board button and speaker.
+\item Designed and implemented logical circuit using Flowrian.
+\item Skills : FPGA, Flowrian
+\end{itemize}}
+
+\cventry{2018}{Alert machine for pressure sore prevention}{\textit{Term-project}}{}{}{
+\begin{itemize}
+\item Developed alert machine for baby and pressure sore patient with Arduino.
+\item Implemented detecting/alerting codes and circuit.
+\item Skills : Arduino, C 
+\end{itemize}}
+ 
+\cventry{2018}{KakaoTalk chat log parser \href{https://github.com/}{[Code]}}{\textit{Self-motivated}}{}{}{
+\begin{itemize}
+\item Developed KakaoTalk chat log parser on cli and gui both.
+\item Colleting chat member information and each chat length.
+\item Skills : Python, PyQt
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{AWARDS}
+
+\cventry{2021}{2nd Prize, PNU 4th SW Hackathon}{}{}{}{
+\begin{itemize}
+\item Developed metaverse platform for education.
+\end{itemize}}
+
+\cventry{2020}{5th Prize, PNU 6th Programming contest}{}{}{}{
+\begin{itemize}
+\item Trained algorithm problem solving and achieved.
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Languages}{Python, C/C++, SQL, Java}
+\cvitem{Frameworks}{Spring boot}
+\cvitem{WebD}{HTML/CSS, JavaScript}
+\cvitem{Utilities}{Git, Jupyter Notebook, Shell Script, KaTeX}
+\cvitem{Commun.}{English, Korean}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Activity}
+\cventry{2017--2022}{Keeper}{\textit{Computer Security Club}}{}{}{
+\begin{itemize}
+\item Presented and attended on periodic security seminar.
+\item Participated network and web hacking study.
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{CERTIFICATE}
+
+\cventry{2019}{Network Manager Level-2}{\textit{National Certificate}}{}{}{}
+
+\cventry{2019}{Craftsman Information Processing}{\textit{National Technical}}{}{}{}
+
+\cventry{2019}{Computer Specialist in Spreadsheet and Database Level-2}{\textit{National Technical}}{}{}{}
+
+\end{document}
